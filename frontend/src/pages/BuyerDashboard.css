@@ -1,0 +1,18 @@
+/* src/pages/BuyerDashboard.css */
+
+.buyer-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .buyer-dashboard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .buyer-dashboard li {
+    margin: 10px 0;
+  }
+  

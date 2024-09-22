@@ -1,0 +1,107 @@
+/* ProductDetail.css */
+
+.product-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .product-title {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .product-info {
+    display: flex;
+    gap: 3rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  }
+  
+  .product-images {
+    flex: 1.2;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .thumbnail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .thumbnail.active {
+    border-color: #3498db;
+  }
+  
+  .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-property {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #34495e;
+  }
+  
+  .property-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-right: 0.5rem;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 1rem;
+    display: block;
+  }
+  
+  .seller-info {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+    font-style: italic;
+    color: #7f8c8d;
+  }
