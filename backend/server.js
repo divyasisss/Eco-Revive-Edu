@@ -25,7 +25,12 @@ mongoose.connect(process.env.MONGO_URI, {
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // Allow all standard methods
+  allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'X-Requested-With', 'Accept'], // Allow common headers or '*'
+}));
 
 app.get('/', (req, res) => {
   res.send('SERVER IS RUNNING');
